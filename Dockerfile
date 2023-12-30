@@ -1,7 +1,7 @@
 FROM ubuntu:20.04
 
 # Avoid interactive questions when installing packages
-ENV DEBIAN_FRONTEND=noninteractive 
+ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt update && apt install -y \
     binutils \
