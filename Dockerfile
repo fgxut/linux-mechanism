@@ -21,7 +21,8 @@ RUN apt update && apt install -y \
     containerd \
     libvirt-daemon-system \
     git \
-    strace
+    strace \
+    && rm -rf /var/lib/apt/lists/*
 
 RUN git clone https://github.com/satoru-takeuchi/linux-in-practice-2nd.git
 
